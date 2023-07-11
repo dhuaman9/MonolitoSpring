@@ -81,12 +81,11 @@ spring:
     password: postgres
     driverClassName: org.postgresql.Driver
     hikari:
-      minimumIdle: 20
-      maximumPoolSize: 100
-      idleTimeout: 120000
-      connectionTimeout: 200000
-      leakDetectionThreshold: 200000
-      auto-commit: false
+      minimumIdle: 10
+      maximumPoolSize: 15
+      idleTimeout: 40000
+      connectionTimeout: 40000
+      
     
 ##security.oauth2.resource.filter-order=3
   security:
